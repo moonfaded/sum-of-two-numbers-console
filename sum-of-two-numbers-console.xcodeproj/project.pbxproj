@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6DDF167C2798620D00222174 /* SwiftmeFirstApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftmeFirstApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DDF167C2798620D00222174 /* sum-of-two-numbers-console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sum-of-two-numbers-console"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDF167F2798620D00222174 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6DDF1686279869E100222174 /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 		6DDF167D2798620D00222174 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DDF167C2798620D00222174 /* SwiftmeFirstApp */,
+				6DDF167C2798620D00222174 /* sum-of-two-numbers-console */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DDF167B2798620D00222174 /* SwiftmeFirstApp */ = {
+		6DDF167B2798620D00222174 /* sum-of-two-numbers-console */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DDF16832798620D00222174 /* Build configuration list for PBXNativeTarget "SwiftmeFirstApp" */;
+			buildConfigurationList = 6DDF16832798620D00222174 /* Build configuration list for PBXNativeTarget "sum-of-two-numbers-console" */;
 			buildPhases = (
 				6DDF16782798620D00222174 /* Sources */,
 				6DDF16792798620D00222174 /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftmeFirstApp;
+			name = "sum-of-two-numbers-console";
 			productName = SwiftmeFirstApp;
-			productReference = 6DDF167C2798620D00222174 /* SwiftmeFirstApp */;
+			productReference = 6DDF167C2798620D00222174 /* sum-of-two-numbers-console */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6DDF16772798620D00222174 /* Build configuration list for PBXProject "SwiftmeFirstApp" */;
+			buildConfigurationList = 6DDF16772798620D00222174 /* Build configuration list for PBXProject "sum-of-two-numbers-console" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DDF167B2798620D00222174 /* SwiftmeFirstApp */,
+				6DDF167B2798620D00222174 /* sum-of-two-numbers-console */,
 			);
 		};
 /* End PBXProject section */
@@ -267,7 +267,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DDF16772798620D00222174 /* Build configuration list for PBXProject "SwiftmeFirstApp" */ = {
+		6DDF16772798620D00222174 /* Build configuration list for PBXProject "sum-of-two-numbers-console" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DDF16812798620D00222174 /* Debug */,
@@ -276,7 +276,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DDF16832798620D00222174 /* Build configuration list for PBXNativeTarget "SwiftmeFirstApp" */ = {
+		6DDF16832798620D00222174 /* Build configuration list for PBXNativeTarget "sum-of-two-numbers-console" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DDF16842798620D00222174 /* Debug */,
