@@ -7,6 +7,6 @@
 
 import Foundation
 
-func sum(_ a: String?, _ b: String?) -> Int {
-    Int(a!)! + Int(b!)!
+func sum(_ a: Int?, _ b: Int?) -> Int {
+    a! + b!
 }
