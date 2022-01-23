@@ -14,6 +14,40 @@ enum SupportedOperation: String {
     case power = "^"
 }
 
+func getOperation() -> SupportedOperation? {
+    while true {
+        if let typedOperation = SupportedOperation.init(rawValue: String(readLine() ?? "")) {
+        print("Value successfuly gained")
+        return typedOperation
+        } else {
+        print("Try supported value: ")
+        }
+    }
+}
+
+func getCountOfArgs() -> UInt8 {
+    while true {
+        if let typedCountOfArgs = UInt8(readLine() ?? "") {
+            print("Value successfuly gained")
+            return typedCountOfArgs
+        } else {
+            print("Try supported value: ")
+        }
+    }
+}
+
+func getArguments() -> [Int] {
+    var result: [Int] = []
+    repeat {
+        if let argument = Int(readLine() ?? "") {
+            result.append(argument)
+            print("Argument successfully added")
+        } else {
+            print("Please, choose another value")
+        }
+    } while result.count < countOfArgs!
+    return result
+}
 
 func operate(_ operation: SupportedOperation?, _ arguments:[Int]) -> Int {
     var result = arguments[0]
