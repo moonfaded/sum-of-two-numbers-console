@@ -5,26 +5,42 @@
 //  Created by Александр Владыко on 19.01.22.
 //
 
-import Foundation
 
-func operate(_ a: Int?, _ b: Int?, _ operation: SupportedOperation?) -> Int? {
-    guard let c = a else { return nil }
-    guard let d = b else { return nil }
-    guard let action = operation else { return nil }
+enum SupportedOperation: String {
+    case addition = "+"
+    case subtraction = "-"
+    case multiplication = "*"
+    case division = "/"
+    case power = "^"
+}
+
+
+func operate(_ operation: SupportedOperation?, _ arguments:[Int]) -> Int {
+    var result = arguments[0]
     
-    switch action {
+    switch operation! {
+        
     case .addition:
-        return c+d
+        return arguments.reduce(0, +)
+        
     case .subtraction:
-        return c-d
+            for index in 1..<arguments.count {
+                result -= arguments[index]
+            }
+            return result
+        
     case .multiplication:
-        return c*d
+        return arguments.reduce(1, *)
+        
     case .division:
-        return c/d
+        for index in 1..<arguments.count {
+            result /= arguments[index]
+        }
+        return result
+        
     case .power:
-        var result = c
-        for _ in 1..<d {
-            result *= result
+        for _ in 1..<arguments[1] {
+            result *= arguments[0]
         }
         return result
     }
